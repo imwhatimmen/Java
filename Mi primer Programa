@@ -1,0 +1,7 @@
+public class Main
+{
+	public static void main(String[] args) {//main para empezar igual que en C++. Void es vacío, Main no va a devolver nada. 
+	                                         //Public, lo ven todos
+		System.out.println("Hello World");
+	}
+}
