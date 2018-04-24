@@ -1,0 +1,14 @@
+public class ManejaMascotas {
+
+	public static void main(String[] args) {
+		Mascota mauri;
+		mauri=new Mascota("mauri",500,"jirafa",'m');
+		System.out.println("Mi mascota se llama "+mauri.getNombre());
+		System.out.println("y tinene "+mauri.getEdad()+" años");
+		//pasa un año
+		mauri.setEdad(501);
+		System.out.println("Ahora tiene "+mauri.getEdad());
+		System.out.println("por lo tanto nació en el año"+mauri.getAnioNacimiento(2018));
+	}
+
+}
