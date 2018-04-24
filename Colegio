@@ -1,0 +1,29 @@
+
+public class Colegio extends Edificio {		
+//lo mismo con alguna peculiaridad  (da error porque falta el constructor, necesito los mismos datos que para el 
+//edificio y si quiero alguno mas
+	private int numeroAulas;
+	private boolean pabellon;
+	public Colegio(String direccion, int codigoPostal, float altura, boolean calefaccionCentral, int numeroAulas, boolean pabellon){
+		super(direccion, codigoPostal, altura, calefaccionCentral); //son los que reenvía a la clase madre
+		this.numeroAulas=numeroAulas; //dar valor al atributo
+		this.pabellon=pabellon;
+	}
+	public int getNumeroAulas() {
+		return numeroAulas;
+	}
+	public void setNumeroAulas(int numeroAulas) {
+		this.numeroAulas = numeroAulas;
+	}
+	public boolean isPabellon() {
+		return pabellon;
+	}
+	public void setPabellon(boolean pabellon) {
+		this.pabellon = pabellon;
+	}
+	public int getCapacidadColegio(){
+		int capacidadColegio;
+		capacidadColegio=numeroAulas*30;
+		return(capacidadColegio);
+	}
+}
