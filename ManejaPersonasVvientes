@@ -1,0 +1,12 @@
+
+public class ManejaPersonasVivientes {
+	public static void main(String[] args) {
+		PersonaViviente persona1,persona2;
+		FechaNacimiento nuevaFecha;
+		nuevaFecha=new FechaNacimiento(19,4,2018);
+		persona1=new PersonaViviente("Hulio","Pérez","López",nuevaFecha);
+		System.out.println("Me llamo "+ persona1.getNombre() + persona1.getApellido1() + persona1.getApellido2());
+		persona2=new PersonaViviente("Manuel","Hui","Iuh",nuevaFecha);
+		System.out.println("Me llamo "+ persona2.getNombre() + persona2.getApellido1() + persona2.getApellido2());
+	}
+}
